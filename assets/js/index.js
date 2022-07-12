@@ -10,7 +10,7 @@ function getDataNow() {
     url: base_url,
     dataType: "json",
     success: function (hasil) {
-      if (hasil.plpm != "-") {
+      if (hasil.coundData != 0) {
         $("#kl").text(hasil.kl);
         $("#dl").text(hasil.dl);
         $("#ppu").text(hasil.ppu);
