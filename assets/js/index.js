@@ -3,28 +3,31 @@ $(document).ready(function () {
 });
 
 function getDataNow() {
-  var base_url = "https://www.radhiansobarna.com/api/elsa/tugaspelayanan/getDataNow";
+  var base_url = "https://www.radhiansobarna.com/api/elsa/tugaspelayanan2/getDataNow";
+  // var base_url = "https://www.localhost/api/elsa/tugaspelayanan2/getDataNow";
   $.ajax({
     type: "POST",
     url: base_url,
     dataType: "json",
     success: function (hasil) {
       if (hasil.plpm != "-") {
-        $("#plpm").text(hasil.plpm);
+        $("#kl").text(hasil.kl);
         $("#dl").text(hasil.dl);
-        $("#ppu").text(hasil.pu);
-        $("#ppm").text(hasil.pm);
-        $("#pengawask").text(hasil.pengawask);
-        $("#petugask").text(hasil.petugask);
+        $("#ppu").text(hasil.ppu);
+        $("#pb").text(hasil.pb);
+        $("#pp").text(hasil.pp);
+        $("#pw").text(hasil.pw);
+        $("#rk").text(hasil.rk);
         hideJadwal(false);
         hidePesan(true);
       } else {
-        $("#plpm").text("-");
+        $("#kl").text("-");
         $("#dl").text("-");
         $("#ppu").text("-");
-        $("#ppm").text("-");
-        $("#pengawask").text("-");
-        $("#petugask").text("-");
+        $("#pb").text("-");
+        $("#pp").text("-");
+        $("#pw").text("-");
+        $("#rk").text("-");
         hideJadwal(true);
         hidePesan(false);
       }

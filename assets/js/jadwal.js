@@ -19,7 +19,8 @@ function getData() {
     scrollX: true,
 
     ajax: {
-      url: "https://www.radhiansobarna.com/api/elsa/getdata",
+      url: "https://www.radhiansobarna.com/api/elsa/getdata2",
+      // url: "https://www.localhost/api/elsa/getdata2",
       type: "POST",
       data: function (data) {
         data.filterDate = $("#month").val();
@@ -32,6 +33,11 @@ function getData() {
     // },
 
     columnDefs: [
+      {
+        targets: [9],
+        orderable: false,
+        visible: false,
+      },
       {
         targets: [8],
         orderable: false,

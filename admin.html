@@ -107,12 +107,13 @@
                   <thead class="table-light">
                     <th>No</th>
                     <th>Tanggal</th>
-                    <th>P. Layanan Penitipan Makanan</th>
+                    <th>Koordinator Layanan</th>
                     <th>Duta Layanan</th>
-                    <th>Penitipan Uang</th>
-                    <th>Penitipan Makanan</th>
-                    <th>Pengawas Kunjungan Online</th>
-                    <th>Petugas Kunjungan Online</th>
+                    <th>Pendaftaran & Penitipan Uang</th>
+                    <th>Pemeriksaan Barang</th>
+                    <th>Penggeledahan Pria</th>
+                    <th>Penggeledahan Wanita</th>
+                    <th>Ruang Kunjungan</th>
                     <th>Aksi</th>
                   </thead>
                   <tbody class=""></tbody>
@@ -137,36 +138,34 @@
               <label>Tanggal</label>
               <input type="text" id="tgl" class="form-control datepicker" autocomplete="off" />
             </div>
+            
             <div class="form-group mb-4">
-              <label>Pengawas Layanan Penitipan Makanan</label>
-              <div class="row">
-                <div class="col-md-6">
-                  <select id="plpm" class="form-control mb-4 mb-md-0" placeholder="Petugas 1"></select>
-                </div>
-                <div class="col-md-6">
-                  <select id="plpm2" class="form-control mb-4 mb-md-0" placeholder="Petugas 2"></select>
-                </div>
-              </div>
+              <label>Koordinator Layanan</label>
+              <select id="kl" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
               <label>Duta Layanan</label>
               <select id="dl" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Penitipan Uang</label>
-              <select id="pu" class="form-control"></select>
+              <label>Pendaftaran & Penitipan Uang</label>
+              <select id="ppu" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Penitipan Makanan</label>
-              <select id="pm" class="form-control"></select>
+              <label>Penitipan Barang</label>
+              <select id="pb" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Pengawas Kunjungan Online</label>
-              <select id="pengawask" class="form-control"></select>
+              <label>Penggeledahan Pria</label>
+              <select id="pp" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Petugas Kunjungan Online</label>
-              <select id="petugask" class="form-control"></select>
+              <label>Penggeledahan Wanita</label>
+              <select id="pw" class="form-control"></select>
+            </div>
+            <div class="form-group mb-4">
+              <label>Ruang Kunjungan</label>
+              <select id="rk" class="form-control"></select>
             </div>
           </div>
           <div class="modal-footer">
@@ -191,36 +190,34 @@
               <label>Tanggal</label>
               <input type="text" id="tglU" class="form-control datepicker" autocomplete="off" />
             </div>
+
             <div class="form-group mb-4">
-              <label>Pengawas Layanan Penitipan Makanan</label>
-              <div class="row">
-                <div class="col-md-6">
-                  <select id="plpmU" class="form-control mb-4 mb-md-0"></select>
-                </div>
-                <div class="col-md-6">
-                  <select id="plpm2U" class="form-control mb-4 mb-md-0"></select>
-                </div>
-              </div>
+              <label>Koordinator Layanan</label>
+              <select id="klU" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
               <label>Duta Layanan</label>
               <select id="dlU" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Penitipan Uang</label>
-              <select id="puU" class="form-control"></select>
+              <label>Pendaftaran & Penitipan Uang</label>
+              <select id="ppuU" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Penitipan Makanan</label>
-              <select id="pmU" class="form-control"></select>
+              <label>Penitipan Barang</label>
+              <select id="pbU" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Pengawas Kunjungan Online</label>
-              <select id="pengawaskU" class="form-control"></select>
+              <label>Penggeledahan Pria</label>
+              <select id="ppU" class="form-control"></select>
             </div>
             <div class="form-group mb-4">
-              <label>Petugas Kunjungan Online</label>
-              <select id="petugaskU" class="form-control"></select>
+              <label>Penggeledahan Wanita</label>
+              <select id="pwU" class="form-control"></select>
+            </div>
+            <div class="form-group mb-4">
+              <label>Ruang Kunjungan</label>
+              <select id="rkU" class="form-control"></select>
             </div>
           </div>
           <div class="modal-footer">
