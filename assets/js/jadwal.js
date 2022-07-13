@@ -41,12 +41,10 @@ function getData() {
       {
         targets: [9],
         orderable: false,
-        visible: false,
       },
       {
         targets: [8],
         orderable: false,
-        visible: false,
       },
       {
         targets: [7],
