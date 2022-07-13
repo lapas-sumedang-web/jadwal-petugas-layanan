@@ -18,6 +18,7 @@ function getDataNow() {
         $("#pp").text(hasil.pp);
         $("#pw").text(hasil.pw);
         $("#rk").text(hasil.rk);
+        $("#pk").text(hasil.pk);
         hideJadwal(false);
         hidePesan(true);
       } else {
@@ -28,6 +29,7 @@ function getDataNow() {
         $("#pp").text("-");
         $("#pw").text("-");
         $("#rk").text("-");
+        $("#pk").text("-");
         hideJadwal(true);
         hidePesan(false);
       }

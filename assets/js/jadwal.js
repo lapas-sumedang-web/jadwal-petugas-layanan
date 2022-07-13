@@ -34,6 +34,11 @@ function getData() {
 
     columnDefs: [
       {
+        targets: [10],
+        orderable: false,
+        visible: false,
+      },
+      {
         targets: [9],
         orderable: false,
         visible: false,

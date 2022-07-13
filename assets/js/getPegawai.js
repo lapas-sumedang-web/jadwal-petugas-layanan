@@ -7,6 +7,7 @@ $(document).ready(function () {
   formPp();
   formPw();
   formRk();
+  formPk();
 });
 
 function formKl() {
@@ -133,6 +134,26 @@ function formRk() {
   var base_url = "https://www.radhiansobarna.com/api/elsa/pegawai/data";
   var formInput = document.getElementById("rk");
   var formInputU = document.getElementById("rkU");
+  formInput.innerHTML = '<option value="">--Pilih--</option>';
+  formInputU.innerHTML = '<option value="">--Pilih--</option>';
+  $.ajax({
+    type: "POST",
+    url: base_url,
+    dataType: "json",
+    success: function (hasil) {
+      for (var i = 0; i < hasil.length; i++) {
+        var item = hasil[i];
+        formInput.innerHTML += `<option value="${item.pegawai_nip}">${item.pegawai_nama}</option>`;
+        formInputU.innerHTML += `<option value="${item.pegawai_nip}">${item.pegawai_nama}</option>`;
+      }
+    },
+  });
+}
+
+function formPk() {
+  var base_url = "https://www.radhiansobarna.com/api/elsa/pegawai/data";
+  var formInput = document.getElementById("pk");
+  var formInputU = document.getElementById("pkU");
   formInput.innerHTML = '<option value="">--Pilih--</option>';
   formInputU.innerHTML = '<option value="">--Pilih--</option>';
   $.ajax({

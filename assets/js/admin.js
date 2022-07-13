@@ -61,6 +61,7 @@ function detailData(id) {
       $("#ppU").val(hasil[0].plk_pp);
       $("#pwU").val(hasil[0].plk_pw);
       $("#rkU").val(hasil[0].plk_rk);
+      $("#pkU").val(hasil[0].plk_pk);
       enable();
       document.body.style.paddingRight = "0px";
     },
@@ -86,6 +87,7 @@ function proses_tambah() {
   let pp = $("#pp").val();
   let pw = $("#pw").val();
   let rk = $("#rk").val();
+  let pk = $("#pk").val();
 
   loadingklik();
   disable();
@@ -100,7 +102,8 @@ function proses_tambah() {
       pb: pb,
       pp: pp,
       pw: pw,
-      rk: rk
+      rk: rk,
+      pk: pk
     };
     $.ajax({
       url: "https://www.radhiansobarna.com/api/elsa/tugaspelayanan2/proses_tambah",
@@ -137,6 +140,7 @@ function proses_ubah() {
   let pp = $("#ppU").val();
   let pw = $("#pwU").val();
   let rk = $("#rkU").val();
+  let pk = $("#pkU").val();
   loadingklik();
   disable();
   if (tgl == "") {
@@ -151,7 +155,8 @@ function proses_ubah() {
       pb: pb,
       pp: pp,
       pw: pw,
-      rk: rk
+      rk: rk,
+      pk: pk
     };
     $.ajax({
       url: "https://www.radhiansobarna.com/api/elsa/tugaspelayanan2/proses_ubah",
@@ -241,6 +246,7 @@ function hapusForm() {
   let pp = $("#pp");
   let pw = $("#pw");
   let rk = $("#rk");
+  let pk = $("#pk");
   // update
   let idplk = $("#idplk");
   let klU = $("#klU");
@@ -250,6 +256,7 @@ function hapusForm() {
   let ppU = $("#ppU");
   let pwU = $("#pwU");
   let rkU = $("#rkU");
+  let pkU = $("#pkU");
 
   tgl.val("");
   idplk.val("");
@@ -261,6 +268,7 @@ function hapusForm() {
   pp.val("");
   pw.val("");
   rk.val("");
+  pk.val("");
 
   klU.val("");
   dlU.val("");
@@ -269,6 +277,7 @@ function hapusForm() {
   ppU.val("");
   pwU.val("");
   rkU.val("");
+  pkU.val("");
 }
 
 function loadingklik() {
